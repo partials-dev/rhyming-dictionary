@@ -11,9 +11,9 @@
   },
   "activationCommands": {
     "atom-workspace": [
-      "rhyme:perfect",
-      "rhyme:near",
-      "rhyme:all"
+      "rhyming-dictionary:find-perfect-rhymes",
+      "rhyming-dictionary:find-near-rhymes",
+      "rhyming-dictionary:find-all-rhymes"
     ]
   },
   "dependencies": {

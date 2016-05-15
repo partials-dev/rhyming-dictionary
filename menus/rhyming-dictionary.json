@@ -1,10 +1,20 @@
 {
   "context-menu": {
     "atom-text-editor": [
+      { "type": "separator" },
       {
-        "label": "Toggle my-package",
-        "command": "my-package:toggle"
-      }
+        "label": "Find Perfect Rhymes",
+        "command": "rhyming-dictionary:find-perfect-rhymes"
+      },
+      {
+        "label": "Find Near Rhymes",
+        "command": "rhyming-dictionary:find-near-rhymes"
+      },
+      {
+        "label": "Find All Rhymes",
+        "command": "rhyming-dictionary:find-all-rhymes"
+      },
+      { "type": "separator" }
     ]
   },
   "menu": [
@@ -16,15 +26,15 @@
           "submenu": [
             {
               "label": "Find Perfect Rhymes",
-              "command": "rhyme:perfect"
+              "command": "rhyming-dictionary:find-perfect-rhymes"
             },
             {
               "label": "Find Near Rhymes",
-              "command": "rhyme:near"
+              "command": "rhyming-dictionary:find-near-rhymes"
             },
             {
               "label": "Find All Rhymes",
-              "command": "rhyme:all"
+              "command": "rhyming-dictionary:find-all-rhymes"
             }
           ]
         }
