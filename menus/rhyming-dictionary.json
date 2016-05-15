@@ -1,0 +1,34 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle my-package",
+        "command": "my-package:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Rhyming Dictionary",
+          "submenu": [
+            {
+              "label": "Find Perfect Rhymes",
+              "command": "rhyme:perfect"
+            },
+            {
+              "label": "Find Near Rhymes",
+              "command": "rhyme:near"
+            },
+            {
+              "label": "Find All Rhymes",
+              "command": "rhyme:all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

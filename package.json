@@ -1,16 +1,20 @@
 {
-  "name": "atom-rhyme",
-  "main": "./lib/rhyme",
-  "version": "0.0.0",
-  "description": "A short description of your package",
+  "name": "atom-rhyming-dictionary",
+  "main": "./lib/index",
+  "version": "0.0.1",
+  "description": "A rhyming dictionary for Atom (http://atom.io)",
   "keywords": [],
-  "activationCommands": {
-    "atom-workspace": "rhyme:perfect"
-  },
-  "repository": "https://github.com/partials-music/atom-rhyme",
+  "repository": "https://github.com/partials-music/atom-rhyming-dictionary",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "activationCommands": {
+    "atom-workspace": [
+      "rhyme:perfect",
+      "rhyme:near",
+      "rhyme:all"
+    ]
   },
   "dependencies": {
     "get-promise": "^1.4.0"
