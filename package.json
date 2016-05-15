@@ -1,0 +1,24 @@
+{
+  "name": "atom-rhyme",
+  "main": "./lib/rhyme",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "rhyme:perfect"
+  },
+  "repository": "https://github.com/partials-music/atom-rhyme",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "get-promise": "^1.4.0"
+  },
+  "devDependencies": {
+    "standard": "^7.0.1"
+  },
+  "standard": {
+    "globals": ["atom"]
+  }
+}
