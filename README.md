@@ -1,5 +1,7 @@
 # Atom Rhyming Dictionary
 
+[![Build Status](https://travis-ci.org/partials-music/atom-rhyming-dictionary.svg?branch=master)](https://travis-ci.org/partials-music/atom-rhyming-dictionary)
+
 Easily find rhymes in [Atom](http://atom.io).
 
 ![Atom rhyming dictionary demo](https://cloud.githubusercontent.com/assets/5033974/15276372/2ff824d4-1ab4-11e6-99f9-873ffba70be8.gif)
@@ -41,4 +43,4 @@ Open the [command palette](https://atom.io/packages/command-palette) by pressing
 
 ## Menu
 
-All the commands are available under the `Packages -> Rhyming Dictionary` menu.
+All the commands are available under the `Packages -> Rhyming Dictionary` menu, and also from the context menu.
