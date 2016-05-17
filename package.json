@@ -32,7 +32,9 @@
       "jasmine",
       "runs",
       "spyOn",
-      "waitsFor"
+      "waitsFor",
+      "waitsForPromise",
+      "fit"
     ]
   }
 }
