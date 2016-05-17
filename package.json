@@ -23,6 +23,16 @@
     "standard": "^7.0.1"
   },
   "standard": {
-    "globals": ["atom", "describe", "it", "expect", "beforeEach", "jasmine", "runs", "spyOn", "waitsFor"]
+    "globals": [
+      "atom",
+      "describe",
+      "it",
+      "expect",
+      "beforeEach",
+      "jasmine",
+      "runs",
+      "spyOn",
+      "waitsFor"
+    ]
   }
 }

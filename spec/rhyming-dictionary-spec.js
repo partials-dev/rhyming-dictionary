@@ -2,6 +2,7 @@
 
 import RhymingDictionary from '../lib/rhyming-dictionary'
 import datamuseHelpers from './datamuse-helpers'
+import rhymingDictionaryHelpers from './rhyming-dictionary-helpers'
 
 describe('RhymingDictionary', () => {
   var dictionary
@@ -48,8 +49,8 @@ describe('RhymingDictionary', () => {
       runs(() => {
         const perfectSyllableGroups = dictionary.getSyllableGroups('perfect')
         const nearSyllableGroups = dictionary.getSyllableGroups('near')
-        expect(perfectSyllableGroups).toEqual(datamuseHelpers.FAKE_PERFECT_SYLLABLE_GROUPS)
-        expect(nearSyllableGroups).toEqual(datamuseHelpers.FAKE_NEAR_SYLLABLE_GROUPS)
+        expect(perfectSyllableGroups).toEqual(rhymingDictionaryHelpers.FAKE_PERFECT_SYLLABLE_GROUPS)
+        expect(nearSyllableGroups).toEqual(rhymingDictionaryHelpers.FAKE_NEAR_SYLLABLE_GROUPS)
       })
     })
   })
