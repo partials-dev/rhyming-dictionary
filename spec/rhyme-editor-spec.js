@@ -2,13 +2,14 @@
 
 import RhymeEditor from '../lib/rhyme-editor'
 import rhymingDictionaryHelpers from './rhyming-dictionary-helpers'
+import rhymeEditorHelpers from './rhyme-editor-helpers'
 
 describe('RhymeEditor', () => {
   var rhymeEditor
   var editorSpy
   var dictionarySpy
   beforeEach(() => {
-    editorSpy = jasmine.createSpyObj('editor', ['setText', 'insertText', 'insertNewline', 'setSoftWrapped', 'moveToTop', 'destroy'])
+    editorSpy = rhymeEditorHelpers.createEditorSpy()
     dictionarySpy = {}
 
     dictionarySpy.target = 'test'
