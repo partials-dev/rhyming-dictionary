@@ -10,11 +10,11 @@ import RhymeEditor from '../lib/rhyme-editor'
 describe('package', () => {
   describe('.activate', () => {
     it('registers all commands', () => {
-      spyOn(atom.commands, 'add')
+      spyOn(atom.commands, 'add').andCallThrough()
       rhymingDictionaryPackage.activate()
-      const TARGET = rhymingDictionaryPackage.TARGET
+      const target = rhymingDictionaryPackage.target
       const commands = rhymingDictionaryPackage.commands
-      expect(atom.commands.add).toHaveBeenCalledWith(TARGET, commands)
+      expect(atom.commands.add).toHaveBeenCalledWith(target, commands)
     })
   })
 
@@ -60,7 +60,7 @@ describe('package', () => {
       const commandString = `rhyming-dictionary:find-${rhymeType}-rhymes`
       describe(commandString, () => {
         it('should activate the package', () => {
-          spyOn(rhymingDictionaryPackage, 'activate')
+          spyOn(rhymingDictionaryPackage, 'activate').andCallThrough()
           executeCommand(commandString, () => {
             expect(rhymingDictionaryPackage.activate).toHaveBeenCalledWith({})
           })
