@@ -15,7 +15,7 @@ describe('RhymeEditor', () => {
     dictionarySpy.target = 'test'
     dictionarySpy.getSyllableGroups = jasmine.createSpy().andReturn(rhymingDictionaryHelpers.FAKE_PERFECT_SYLLABLE_GROUPS)
 
-    rhymeEditor = new RhymeEditor(editorSpy, dictionarySpy, ['perfect'])
+    rhymeEditor = new RhymeEditor(editorSpy, ['perfect'], dictionarySpy)
     rhymeEditor.editor = editorSpy
   })
 

@@ -32,8 +32,8 @@ describe('package', () => {
 
     runs(() => {
       const openTabArgs = RhymeEditor.openTab.mostRecentCall.args
-      expect(openTabArgs[0].constructor.name).toEqual('RhymingDictionary')
-      expect(openTabArgs[1]).toEqual('perfect')
+      expect(openTabArgs[0]).toEqual('perfect')
+      expect(openTabArgs[1]).toEqual('test')
     })
   })
 
