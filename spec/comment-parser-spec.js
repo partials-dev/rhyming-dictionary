@@ -1,6 +1,6 @@
 'use babel'
 
-import comments from '../lib/comments'
+import CommentParser from '../lib/comment-parser'
 
 const sample = `# like Fleet Foxes, Sufjan Stevens
 # like Beirut
@@ -8,7 +8,13 @@ This is not a comment.
 This is also # not a comment`
 const lines = sample.split('\n')
 
-describe('Comments', () => {
+describe('CommentParser', () => {
+  var comments
+  beforeEach(() => {
+    comments = new CommentParser('#', {
+      SIMILAR_TO: 'like'
+    })
+  })
   describe('::getCommentLines', () => {
     var commentLines
     beforeEach(() => {
@@ -28,11 +34,11 @@ describe('Comments', () => {
 
   describe('::getKey', () => {
     it('correctly parses similar_to keys in comments with multiple values', () => {
-      expect(comments.getKey(lines[0])).toEqual(comments.KEYS.SIMILAR_TO)
+      expect(comments.getKey(lines[0])).toEqual(comments.keys.SIMILAR_TO)
     })
 
     it('correctly parses similar_to keys in comments with single values', () => {
-      expect(comments.getKey(lines[1])).toEqual(comments.KEYS.SIMILAR_TO)
+      expect(comments.getKey(lines[1])).toEqual(comments.keys.SIMILAR_TO)
     })
 
     it('returns null for non-comments', () => {
@@ -64,7 +70,7 @@ describe('Comments', () => {
   describe('::parseLine', () => {
     it('extracts the correct keys and values in a multi-value comment', () => {
       const comment = comments.parseLine(lines[0])
-      const similarValues = comment[comments.KEYS.SIMILAR_TO]
+      const similarValues = comment[comments.keys.SIMILAR_TO]
 
       expect(similarValues).toContain('Fleet Foxes')
       expect(similarValues).toContain('Sufjan Stevens')
@@ -74,7 +80,7 @@ describe('Comments', () => {
 
     it('extracts the correct keys and values in a single-value comment', () => {
       const comment = comments.parseLine(lines[1])
-      const similarValues = comment[comments.KEYS.SIMILAR_TO]
+      const similarValues = comment[comments.keys.SIMILAR_TO]
 
       expect(similarValues).toContain('Beirut')
       expect(similarValues.length).toEqual(1)
@@ -83,7 +89,7 @@ describe('Comments', () => {
 
     it('returns an empty object for non-comments', () => {
       const comment = comments.parseLine(lines[2])
-      const similarValues = comment[comments.KEYS.SIMILAR_TO]
+      const similarValues = comment[comments.keys.SIMILAR_TO]
       expect(similarValues).toBe(undefined)
       expect(Object.keys(comment).length).toEqual(0)
     })
@@ -92,7 +98,7 @@ describe('Comments', () => {
   describe('::parse', () => {
     it('extracts the correct keys and values from a block of text', () => {
       const commentData = comments.parse(sample)
-      const similarValues = commentData[comments.KEYS.SIMILAR_TO]
+      const similarValues = commentData[comments.keys.SIMILAR_TO]
 
       expect(similarValues).toContain('Fleet Foxes')
       expect(similarValues).toContain('Sufjan Stevens')
