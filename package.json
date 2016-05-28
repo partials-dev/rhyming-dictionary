@@ -15,7 +15,8 @@
       "rhyming-dictionary:find-near-rhymes",
       "rhyming-dictionary:find-all-rhymes",
       "rhyming-dictionary:highlight",
-      "rhyming-dictionary:lyrics"
+      "rhyming-dictionary:lyrics",
+      "rhyming-dictionary:playlist"
     ]
   },
   "dependencies": {
@@ -27,7 +28,8 @@
     "node-genius": "^1.0.5",
     "passport": "^0.3.2",
     "passport-oauth2": "^1.3.0",
-    "scrape-url": "^3.0.0"
+    "scrape-url": "^3.0.0",
+    "spotify-web-api-node": "^2.3.0"
   },
   "devDependencies": {
     "standard": "^7.0.1"
@@ -51,6 +53,36 @@
     "geniusAuthToken": {
       "title": "Genius Auth Token",
       "description": "Lets us pull lyrics from the Genius API",
+      "type": "string",
+      "default": ""
+    },
+    "geniusClientId": {
+      "title": "Genius Client ID",
+      "description": "Tells the Genius API who we are",
+      "type": "string",
+      "default": ""
+    },
+    "geniusClientSecret": {
+      "title": "Genius Client Secret",
+      "description": "Proves our identity to the Genius API",
+      "type": "string",
+      "default": ""
+    },
+    "spotifyAuthToken": {
+      "title": "Spotify Auth Token",
+      "description": "Lets us pull songs from the Spotify API",
+      "type": "string",
+      "default": ""
+    },
+    "spotifyClientId": {
+      "title": "Spotify Client Id",
+      "description": "Identifies us to the Spotify API",
+      "type": "string",
+      "default": ""
+    },
+    "spotifyClientSecret": {
+      "title": "Spotify Client Secret",
+      "description": "Proves our identity to the Spotify API",
       "type": "string",
       "default": ""
     }
