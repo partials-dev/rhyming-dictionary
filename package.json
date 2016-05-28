@@ -28,6 +28,7 @@
     "node-genius": "^1.0.5",
     "passport": "^0.3.2",
     "passport-oauth2": "^1.3.0",
+    "passport-spotify": "^0.3.0",
     "scrape-url": "^3.0.0",
     "spotify-web-api-node": "^2.3.0"
   },
@@ -50,8 +51,8 @@
     ]
   },
   "configSchema": {
-    "geniusAuthToken": {
-      "title": "Genius Auth Token",
+    "geniusAccessToken": {
+      "title": "Genius Access Token",
       "description": "Lets us pull lyrics from the Genius API",
       "type": "string",
       "default": ""
@@ -68,8 +69,8 @@
       "type": "string",
       "default": ""
     },
-    "spotifyAuthToken": {
-      "title": "Spotify Auth Token",
+    "spotifyAccessToken": {
+      "title": "Spotify Access Token",
       "description": "Lets us pull songs from the Spotify API",
       "type": "string",
       "default": ""
