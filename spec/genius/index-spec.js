@@ -1,6 +1,6 @@
 'use babel'
 
-import genius from '../../lib/genius'
+// import genius from '../../lib/genius'
 
 // currently broken
 // have to get the genius

@@ -16,7 +16,8 @@
       "rhyming-dictionary:find-all-rhymes",
       "rhyming-dictionary:highlight",
       "rhyming-dictionary:lyrics",
-      "rhyming-dictionary:playlist"
+      "rhyming-dictionary:playlist",
+      "rhyming-dictionary:nlp"
     ]
   },
   "dependencies": {
@@ -25,6 +26,7 @@
     "get-promise": "^1.4.0",
     "json-stringify-safe": "^5.0.1",
     "moment": "^2.13.0",
+    "nlp_compromise": "^4.12.1",
     "node-genius": "^1.0.5",
     "passport": "^0.3.2",
     "passport-oauth2": "^1.3.0",

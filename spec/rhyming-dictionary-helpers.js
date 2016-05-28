@@ -1,7 +1,7 @@
 'use babel'
 
 import datamuseHelpers from './datamuse-helpers'
-import RhymingDictionary from '../lib/rhyming-dictionary'
+// import RhymingDictionary from '../lib/rhyming-dictionary'
 
 const FAKE_NEAR_SYLLABLE_GROUPS = []
 FAKE_NEAR_SYLLABLE_GROUPS[1] = ['meshed']
