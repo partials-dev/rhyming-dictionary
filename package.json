@@ -27,7 +27,6 @@
     "json-stringify-safe": "^5.0.1",
     "moment": "^2.13.0",
     "nlp_compromise": "^4.12.1",
-    "node-genius": "^1.0.5",
     "passport": "^0.3.2",
     "passport-oauth2": "^1.3.0",
     "passport-spotify": "^0.3.0",
@@ -53,24 +52,6 @@
     ]
   },
   "configSchema": {
-    "geniusAccessToken": {
-      "title": "Genius Access Token",
-      "description": "Lets us pull lyrics from the Genius API",
-      "type": "string",
-      "default": ""
-    },
-    "geniusClientId": {
-      "title": "Genius Client ID",
-      "description": "Tells the Genius API who we are",
-      "type": "string",
-      "default": ""
-    },
-    "geniusClientSecret": {
-      "title": "Genius Client Secret",
-      "description": "Proves our identity to the Genius API",
-      "type": "string",
-      "default": ""
-    },
     "spotifyAccessToken": {
       "title": "Spotify Access Token",
       "description": "Lets us pull songs from the Spotify API",
