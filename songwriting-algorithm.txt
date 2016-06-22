@@ -1,0 +1,12 @@
+
+decide direction: "this is a song about..."
+alternate between
+  brainstorm
+    free write
+    object write
+  develop
+    write lyrics
+    pull from brainstorms to meet technical needs while maintaining
+  optimize
+    improve rhythm
+    refine rhyme
