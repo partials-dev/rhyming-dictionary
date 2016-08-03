@@ -1,7 +1,5 @@
 {
   "atom-text-editor": {
-    "cmd-r h y p": "rhyming-dictionary:find-perfect-rhymes",
-    "cmd-r h y n": "rhyming-dictionary:find-near-rhymes",
-    "cmd-r h y a": "rhyming-hdictionary:find-all-rhymes"
+    "cmd-r h y": "rhyming-dictionary:find-rhymes"
   }
 }
