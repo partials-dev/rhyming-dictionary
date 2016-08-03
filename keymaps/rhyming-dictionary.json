@@ -1,5 +1,5 @@
 {
   "atom-text-editor": {
-    "cmd-r h y": "rhyming-dictionary:find-rhymes"
+    "ctrl-r": "rhyming-dictionary:find-rhymes"
   }
 }
