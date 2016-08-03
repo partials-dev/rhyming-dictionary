@@ -4,4 +4,4 @@
 
 Easily find rhymes in [Atom](http://atom.io).
 
-![Atom rhyming dictionary demo](https://cloud.githubusercontent.com/assets/5033974/17352923/04e58758-5909-11e6-9837-0ece7110ec67.gif)
+![Atom rhyming dictionary demo](https://cloud.githubusercontent.com/assets/5033974/17353074/4df47cb4-590a-11e6-8980-f12af97b32fe.gif)
