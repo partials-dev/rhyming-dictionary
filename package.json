@@ -21,6 +21,7 @@
     "json-stringify-safe": "^5.0.1",
     "lodash": "^4.13.1",
     "moment": "^2.13.0",
+    "nlp-rhymes-async": "0.0.2",
     "nlp-syllables": "0.0.5",
     "nlp_compromise": "^4.12.1",
     "passport": "^0.3.2",
