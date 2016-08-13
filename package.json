@@ -1,7 +1,7 @@
 {
   "name": "rhyming-dictionary",
   "main": "./lib/index",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A rhyming dictionary for Atom (http://atom.io)",
   "keywords": [],
   "repository": "https://github.com/partials-dev/rhyming-dictionary",
