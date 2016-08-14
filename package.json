@@ -1,35 +1,17 @@
 {
-  "name": "rhyming-dictionary",
+  "name": "rhyme-scheme",
   "main": "./lib/index",
-  "version": "0.3.2",
-  "description": "A rhyming dictionary for Atom (http://atom.io)",
-  "keywords": [],
-  "repository": "https://github.com/partials-dev/rhyming-dictionary",
+  "version": "0.0.1",
+  "description": "Highlights your rhyme scheme. A plugin for Atom (http://atom.io)",
+  "keywords": ["rhyme", "poetry", "language", "songwriting"],
+  "repository": "https://github.com/partials-dev/rhyme-scheme",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "activationCommands": {
-    "atom-workspace": [
-      "rhyming-dictionary:find-rhymes"
-    ]
-  },
   "dependencies": {
-    "body-parser": "^1.15.1",
-    "express": "^4.13.4",
-    "get-promise": "^1.4.0",
-    "json-stringify-safe": "^5.0.1",
-    "lodash": "^4.13.1",
-    "moment": "^2.13.0",
     "nlp-rhymes-async": "0.0.2",
-    "nlp-syllables": "0.0.5",
-    "nlp_compromise": "^4.12.1",
-    "passport": "^0.3.2",
-    "passport-oauth2": "^1.3.0",
-    "passport-spotify": "^0.3.0",
-    "scrape-url": "^3.0.0",
-    "spotify-web-api-node": "^2.3.0",
-    "swagger-client": "^2.1.15"
+    "nlp_compromise": "^4.12.1"
   },
   "devDependencies": {
     "standard": "^7.0.1"

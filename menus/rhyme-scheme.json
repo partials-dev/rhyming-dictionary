@@ -3,8 +3,8 @@
     "atom-text-editor": [
       { "type": "separator" },
       {
-        "label": "Find Rhymes",
-        "command": "rhyming-dictionary:find-rhymes"
+        "label": "Toggle Rhyme Scheme",
+        "command": "rhyme-scheme:toggle"
       },
       { "type": "separator" }
     ]
@@ -14,11 +14,11 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "Rhyming Dictionary",
+          "label": "Rhyme Scheme",
           "submenu": [
             {
-              "label": "Find Rhymes",
-              "command": "rhyming-dictionary:find-rhymes"
+              "label": "Toggle",
+              "command": "rhyme-scheme:toggle"
             }
           ]
         }
